@@ -2,7 +2,9 @@
 LPDDR4 test board
 =================
 
-.. figure:: img/lpddr4-test-board.png
+Copyright (c) 2020-2021 `Antmicro <https://www.antmicro.com>`_
+
+.. figure:: img/lpddr4-test-board.jpg
 
 Overview
 --------
@@ -28,16 +30,22 @@ Key Features
 * Kintex-7 FPGA - XC7K70T-FBG484
 * Modular design with custom DDR4 SO-DIMM connector
 * HDMI output connector
-* Ethernet RJ45 connector with 100BASE-T transciever
-* Micro USB debug connector with FT4232HQ FTDI USB controller.
-* JTAG connector compatible with Xilinx Platform Cable
+* Ethernet RJ45 connector with 1GbE transciever
+* Micro USB debug connector with FT4232HQ FTDI USB controller
+* JTAG
 * microSD card slot
-* QSPI FLASH memory
-* External 4.5-18V power input
+* 16Mbytes S25FL128S QSPI FLASH memory
+* S27KL0641 HyperRAM
+* External 7-12V power input
 * 5 user LEDs
+* 4 user buttons
 
 Block diagram
 -------------
 
 .. figure:: img/lpddr4-test-board-diagram.png
 
+License
+=======
+
+`Apache-2.0 <LICENSE>`_

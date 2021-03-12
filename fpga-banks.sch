@@ -3,10 +3,10 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 2 8
+Sheet 2 9
 Title "LPDDR4 Test Board"
 Date ""
-Rev "1.0.0"
+Rev "1.0.4"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -154,59 +154,48 @@ Text GLabel 4600 1125 1    50   Input ~ 0
 Wire Notes Line
 	11175 525  11175 7975
 Wire Notes Line
-	14050 8825 14075 8825
+	2600 9900 2625 9900
 Wire Wire Line
-	12775 9100 12775 9150
+	1325 10175 1325 10225
 $Comp
 L lpddr4-test-board:GND #PWR0102
 U 1 1 60A67B9C
-P 12775 9150
-F 0 "#PWR0102" H 12775 8900 50  0001 C CNN
-F 1 "GND" H 12780 8977 50  0000 C CNN
-F 2 "" H 12775 9150 50  0001 C CNN
-F 3 "" H 12775 9150 50  0001 C CNN
-	1    12775 9150
+P 1325 10225
+F 0 "#PWR0102" H 1325 9975 50  0001 C CNN
+F 1 "GND" H 1330 10052 50  0000 C CNN
+F 2 "" H 1325 10225 50  0001 C CNN
+F 3 "" H 1325 10225 50  0001 C CNN
+	1    1325 10225
 	-1   0    0    -1  
 $EndComp
-Text GLabel 14875 8425 1    50   Input ~ 0
+Text GLabel 3425 9500 1    50   Input ~ 0
 3V3_SYS
 Wire Wire Line
-	14325 8525 14875 8525
+	2875 9600 3425 9600
 Wire Wire Line
-	14125 9100 14300 9100
-$Comp
-L lpddr4-test-board:ASEM1-100.000MHZ-LC-T U2
-U 1 1 609D57DB
-P 12875 9000
-F 0 "U2" H 13500 9287 60  0000 C CNN
-F 1 "ASEM1-100.000MHZ-LC-T" H 13500 9181 60  0000 C CNN
-F 2 "lpddr4-test-board-footprints:XTAL_ASDM1-25.000MHZ-LC-T" H 13675 9240 60  0001 C CNN
-F 3 "" H 12875 9000 60  0000 C CNN
-	1    12875 9000
-	1    0    0    -1  
-$EndComp
+	2675 10175 2850 10175
 Wire Wire Line
-	14875 8525 14875 8425
-Connection ~ 14875 8525
+	3425 9600 3425 9500
+Connection ~ 3425 9600
 $Comp
 L lpddr4-test-board:C_100n_0402_6V3 C8
 U 1 1 6068B0CD
-P 14875 8675
-F 0 "C8" H 14900 8775 60  0000 L CNN
-F 1 "C_100n_0402_6V3" H 14875 8525 60  0001 C CNN
-F 2 "lpddr4-test-board-footprints:0402-cap" H 15075 8875 60  0001 L CNN
-F 3 "" H 14875 8675 50  0001 C CNN
-F 4 "Walsin" H 15075 9075 60  0001 L CNN "Manufacturer"
-F 5 "0402X104K6R3CT" H 15075 8975 60  0001 L CNN "MPN"
-F 6 "100n" H 14900 8600 50  0000 L CNN "Val"
-	1    14875 8675
+P 3425 9750
+F 0 "C8" H 3175 9775 60  0000 L CNN
+F 1 "C_100n_0402_6V3" H 3425 9600 60  0001 C CNN
+F 2 "lpddr4-test-board-footprints:0402-cap" H 3625 9950 60  0001 L CNN
+F 3 "" H 3425 9750 50  0001 C CNN
+F 4 "Walsin" H 3625 10150 60  0001 L CNN "Manufacturer"
+F 5 "0402X104K6R3CT" H 3625 10050 60  0001 L CNN "MPN"
+F 6 "100n" H 3100 9675 50  0000 L CNN "Val"
+	1    3425 9750
 	-1   0    0    -1  
 $EndComp
-Text Notes 12875 8700 0    50   ~ 0
+Text Notes 1425 9775 0    50   ~ 0
 IC2
 Wire Wire Line
-	12875 9100 12775 9100
-Text GLabel 14300 9100 2    50   Input ~ 0
+	1425 10175 1325 10175
+Text GLabel 2850 10175 2    50   Input ~ 0
 GCLK100
 Text GLabel 2900 1125 1    50   Input ~ 0
 3V3_SYS
@@ -268,29 +257,29 @@ INTERFACES
 Text Notes 1675 850  0    98   ~ 20
 INTERFACES
 Wire Wire Line
-	14125 9000 14325 9000
+	2675 10075 2875 10075
 Wire Wire Line
-	14325 9000 14325 8525
+	2875 10075 2875 9600
 Wire Wire Line
-	12700 8525 12700 9000
+	1250 9600 1250 10075
 Wire Wire Line
-	12700 9000 12875 9000
+	1250 10075 1425 10075
 $Comp
 L lpddr4-test-board:GND #PWR0101
 U 1 1 60A48E0D
-P 14875 9125
-F 0 "#PWR0101" H 14875 8875 50  0001 C CNN
-F 1 "GND" H 14880 8952 50  0000 C CNN
-F 2 "" H 14875 9125 50  0001 C CNN
-F 3 "" H 14875 9125 50  0001 C CNN
-	1    14875 9125
+P 3425 10200
+F 0 "#PWR0101" H 3425 9950 50  0001 C CNN
+F 1 "GND" H 3430 10027 50  0000 C CNN
+F 2 "" H 3425 10200 50  0001 C CNN
+F 3 "" H 3425 10200 50  0001 C CNN
+	1    3425 10200
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	12700 8525 14325 8525
-Connection ~ 14325 8525
+	1250 9600 2875 9600
+Connection ~ 2875 9600
 Wire Wire Line
-	14875 8825 14875 9125
+	3425 9900 3425 10200
 $Comp
 L lpddr4-test-board:XC7K70T-FBG484 U1
 U 3 1 5FB71665
@@ -356,19 +345,6 @@ NoConn ~ 1900 4600
 NoConn ~ 1900 4700
 NoConn ~ 1900 4800
 NoConn ~ 1900 4900
-NoConn ~ 1900 4975
-NoConn ~ 1900 5100
-NoConn ~ 1900 5900
-NoConn ~ 1900 6000
-NoConn ~ 1900 6100
-NoConn ~ 1900 6200
-NoConn ~ 1900 6300
-NoConn ~ 1900 6400
-NoConn ~ 1900 6500
-NoConn ~ 1900 6600
-NoConn ~ 1900 6700
-NoConn ~ 1900 6800
-NoConn ~ 1900 6900
 NoConn ~ 4800 3000
 NoConn ~ 4800 3900
 NoConn ~ 4800 6200
@@ -413,7 +389,7 @@ Wire Wire Line
 Wire Wire Line
 	15125 3225 15000 3225
 Wire Wire Line
-	15450 3325 15000 3325
+	15125 3325 15000 3325
 Wire Wire Line
 	7725 1475 7725 1350
 Wire Wire Line
@@ -461,46 +437,38 @@ Wire Wire Line
 Wire Wire Line
 	8400 1350 8400 1250
 Connection ~ 8225 1350
-Text GLabel 6925 4075 0    50   Input ~ 0
+Text GLabel 6950 3775 0    50   Input ~ 0
 ETH_RXD0
-Text GLabel 6950 3875 0    50   Input ~ 0
+Text GLabel 6975 3975 0    50   Input ~ 0
 ETH_RXD2
-Text GLabel 6975 3075 0    50   Input ~ 0
-ETH_RXERR
 Text GLabel 6950 3675 0    50   Input ~ 0
+ETH_INT_N
+Text GLabel 6950 4975 0    50   Input ~ 0
 ETH_RSTN
-Text GLabel 6925 4275 0    50   Input ~ 0
+Text GLabel 6975 2975 0    50   Input ~ 0
 ETH_TX_EN
 Text GLabel 6975 6975 0    50   Input ~ 0
 ETH_TXD1
-Text GLabel 6925 4175 0    50   Input ~ 0
+Text GLabel 6975 3075 0    50   Input ~ 0
 ETH_RXD3
-Text GLabel 6975 7075 0    50   Input ~ 0
+Text GLabel 6925 4275 0    50   Input ~ 0
 ETH_TXD3
-Text GLabel 6950 6575 0    50   Input ~ 0
-ETH_TXD2
-Text GLabel 6975 3175 0    50   Input ~ 0
-ETH_MDIO
-Text GLabel 6975 3975 0    50   Input ~ 0
-ETH_COL
-Text GLabel 6950 3775 0    50   Input ~ 0
-ETH_RXD1
-Text GLabel 6975 2975 0    50   Input ~ 0
-ETH_CRS
 Text GLabel 7000 6275 0    50   Input ~ 0
-ETH_TXD0
+ETH_TXD2
 Text GLabel 6950 3575 0    50   Input ~ 0
+ETH_MDIO
+Text GLabel 6925 4075 0    50   Input ~ 0
+ETH_RXD1
+Text GLabel 6975 7075 0    50   Input ~ 0
+ETH_TXD0
+Text GLabel 6925 4175 0    50   Input ~ 0
 ETH_MDC
-Text GLabel 6950 2675 0    50   Input ~ 0
+Text GLabel 7025 4575 0    50   Input ~ 0
 ETH_RX_CLK
-Text GLabel 6975 3275 0    50   Input ~ 0
+Text GLabel 6950 3875 0    50   Input ~ 0
 ETH_RX_DV
-Text GLabel 7025 6175 0    50   Input ~ 0
+Text GLabel 7025 4775 0    50   Input ~ 0
 ETH_TX_CLK
-Wire Wire Line
-	6950 2675 7325 2675
-Wire Wire Line
-	6975 3275 7325 3275
 Wire Wire Line
 	6975 2975 7325 2975
 Wire Wire Line
@@ -581,13 +549,9 @@ Wire Wire Line
 	4800 3400 5300 3400
 Wire Wire Line
 	4800 2900 5300 2900
-NoConn ~ 1900 7000
-NoConn ~ 1900 7100
 NoConn ~ 1900 7200
-Text GLabel 5300 3600 2    50   Input ~ 0
+Text GLabel 5275 4600 2    50   Input ~ 0
 GCLK100
-Wire Wire Line
-	4800 3600 5300 3600
 NoConn ~ 4800 2300
 Text GLabel 15475 6625 2    50   Input ~ 0
 DQ11_A
@@ -688,10 +652,10 @@ Text GLabel 10525 4675 2    50   Input ~ 0
 USR_LED4
 Text GLabel 15175 2325 2    50   Input ~ 0
 CA_0A
-Text GLabel 15125 3425 2    50   Input ~ 0
+Text GLabel 15125 3325 2    50   Input ~ 0
 CA_1A
 Wire Wire Line
-	15000 2225 15450 2225
+	15000 2225 15175 2225
 Text GLabel 15125 3125 2    50   Input ~ 0
 CS0_A
 Text GLabel 15125 4025 2    50   Input ~ 0
@@ -720,10 +684,6 @@ Text GLabel 15450 4325 2    50   Input ~ 0
 IO_P4
 Text GLabel 15450 3925 2    50   Input ~ 0
 IO_M5
-Text GLabel 15450 3325 2    50   Input ~ 0
-IO_L5
-Text GLabel 15450 2225 2    50   Input ~ 0
-IO_K4
 NoConn ~ 15000 5325
 Text GLabel 15450 5425 2    50   Input ~ 0
 IO_U5
@@ -731,8 +691,6 @@ NoConn ~ 15000 5925
 NoConn ~ 15000 5825
 Text GLabel 15450 5725 2    50   Input ~ 0
 IO_N5
-NoConn ~ 15000 6025
-NoConn ~ 15000 7125
 Wire Wire Line
 	10225 4075 10525 4075
 Text GLabel 10525 4075 2    50   Input ~ 0
@@ -778,15 +736,11 @@ Wire Wire Line
 Wire Wire Line
 	7325 2575 6950 2575
 Wire Wire Line
-	7325 3175 6975 3175
-Wire Wire Line
 	7325 3575 6950 3575
 Wire Wire Line
 	7325 3675 6950 3675
 Text GLabel 6950 2575 0    50   Input ~ 0
 ETH_REF_CLK
-Text Notes 11500 7875 0    98   ~ 20
-TODO Migrate FTDI interfaces to B13
 Wire Wire Line
 	1900 5700 1550 5700
 Wire Wire Line
@@ -795,17 +749,6 @@ Text GLabel 1550 5300 0    50   Input ~ 0
 UART0_TX
 Wire Wire Line
 	1900 5300 1550 5300
-$Comp
-L lpddr4-test-board:XC7K70T-FBG484 U1
-U 1 1 5FB5167E
-P 3350 4600
-F 0 "U1" H 3350 1825 50  0000 C CNN
-F 1 "XC7K70T-FBG484" H 3350 1734 50  0000 C CNN
-F 2 "lpddr4-test-board-footprints:BGA484C100P22X22_2300X2300X244N" H 3100 5200 50  0001 C CNN
-F 3 "" H 3900 5200 50  0000 C CNN
-	1    3350 4600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	12100 6225 11725 6225
 Text GLabel 11725 6225 0    50   Input ~ 0
@@ -842,4 +785,261 @@ Text GLabel 11700 5525 0    50   Input ~ 0
 IO_U12
 Wire Wire Line
 	11700 5525 12100 5525
+Text GLabel 1550 5600 0    50   Input ~ 0
+HR_CS
+Text GLabel 1550 6100 0    50   Input ~ 0
+HR_RST
+Text GLabel 1550 5400 0    50   Input ~ 0
+HR_CKP
+Text GLabel 1550 5500 0    50   Input ~ 0
+HR_CKN
+Text GLabel 1550 6900 0    50   Input ~ 0
+HR_DQ0
+Text GLabel 1550 5900 0    50   Input ~ 0
+HR_DQ1
+Text GLabel 1550 5800 0    50   Input ~ 0
+HR_DQ2
+Text GLabel 1550 6600 0    50   Input ~ 0
+HR_DQ3
+Text GLabel 1550 6700 0    50   Input ~ 0
+HR_DQ4
+Text GLabel 1550 6800 0    50   Input ~ 0
+HR_DQ5
+Text GLabel 1550 6500 0    50   Input ~ 0
+HR_DQ6
+Text GLabel 1550 5000 0    50   Input ~ 0
+HR_DQ7
+$Comp
+L lpddr4-test-board:XC7K70T-FBG484 U1
+U 1 1 5FB5167E
+P 3350 4600
+F 0 "U1" H 3350 1825 50  0000 C CNN
+F 1 "XC7K70T-FBG484" H 3350 1734 50  0000 C CNN
+F 2 "lpddr4-test-board-footprints:BGA484C100P22X22_2300X2300X244N" H 3100 5200 50  0001 C CNN
+F 3 "" H 3900 5200 50  0000 C CNN
+	1    3350 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 5400 1900 5400
+Wire Wire Line
+	1550 5500 1900 5500
+Wire Wire Line
+	1550 5600 1900 5600
+Wire Wire Line
+	1550 6100 1900 6100
+Wire Wire Line
+	1550 5900 1900 5900
+Wire Wire Line
+	1550 6900 1900 6900
+Wire Wire Line
+	1550 5800 1900 5800
+Wire Wire Line
+	1550 6600 1900 6600
+Wire Wire Line
+	1550 6700 1900 6700
+Wire Wire Line
+	1550 6800 1900 6800
+Wire Wire Line
+	1550 6500 1900 6500
+Wire Wire Line
+	1550 5000 1900 5000
+Wire Wire Line
+	1550 5100 1900 5100
+Text GLabel 1550 5100 0    50   Input ~ 0
+HR_RW
+Wire Wire Line
+	4800 4600 5275 4600
+Wire Wire Line
+	7025 4775 7325 4775
+Wire Wire Line
+	7325 4575 7025 4575
+Text GLabel 15475 6025 2    50   Input ~ 0
+VREF_34
+Wire Wire Line
+	15000 6025 15475 6025
+Text GLabel 15125 3425 2    50   Input ~ 0
+VREF_34
+Text GLabel 15175 2225 2    50   Input ~ 0
+VRN
+Text GLabel 15500 7125 2    50   Input ~ 0
+VRP
+Wire Wire Line
+	15500 7125 15000 7125
+Text GLabel 12250 8875 0    50   Input ~ 0
+VRP
+Text GLabel 12275 8525 0    50   Input ~ 0
+VRN
+$Comp
+L lpddr4-test-board:R_120R_0603 R63
+U 1 1 602A22BC
+P 12600 8525
+F 0 "R63" H 12600 8738 60  0000 C CNN
+F 1 "R_120R_0603" H 12600 8375 60  0001 C CNN
+F 2 "lpddr4-test-board-footprints:0603-res" H 12800 8725 60  0001 L CNN
+F 3 "" H 12600 8525 50  0001 C CNN
+F 4 "VISHAY" H 12800 8925 60  0001 L CNN "Manufacturer"
+F 5 "CRCW0603120RFKEA" H 12800 8825 60  0001 L CNN "MPN"
+F 6 "120R" H 12600 8640 50  0000 C CNN "Val"
+	1    12600 8525
+	1    0    0    -1  
+$EndComp
+$Comp
+L lpddr4-test-board:R_120R_0603 R64
+U 1 1 602A2807
+P 12600 8875
+F 0 "R64" H 12600 9088 60  0000 C CNN
+F 1 "R_120R_0603" H 12600 8725 60  0001 C CNN
+F 2 "lpddr4-test-board-footprints:0603-res" H 12800 9075 60  0001 L CNN
+F 3 "" H 12600 8875 50  0001 C CNN
+F 4 "VISHAY" H 12800 9275 60  0001 L CNN "Manufacturer"
+F 5 "CRCW0603120RFKEA" H 12800 9175 60  0001 L CNN "MPN"
+F 6 "120R" H 12600 8990 50  0000 C CNN "Val"
+	1    12600 8875
+	1    0    0    -1  
+$EndComp
+Text GLabel 12900 8525 2    50   Input ~ 0
+VDDQ
+Wire Wire Line
+	12750 8525 12900 8525
+Wire Wire Line
+	12450 8525 12275 8525
+Wire Wire Line
+	12250 8875 12450 8875
+$Comp
+L lpddr4-test-board:GND #PWR024
+U 1 1 602F09F8
+P 13000 8975
+F 0 "#PWR024" H 13000 8725 50  0001 C CNN
+F 1 "GND" H 13005 8802 50  0000 C CNN
+F 2 "" H 13000 8975 50  0001 C CNN
+F 3 "" H 13000 8975 50  0001 C CNN
+	1    13000 8975
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	12750 8875 13000 8875
+Wire Wire Line
+	13000 8875 13000 8975
+Text GLabel 14600 8850 2    50   Input ~ 0
+VREF_34
+$Comp
+L lpddr4-test-board:R_1k_0603 R65
+U 1 1 600B17BC
+P 13575 8700
+F 0 "R65" V 13525 8450 60  0000 L CNN
+F 1 "R_1k_0603" H 13575 8550 60  0001 C CNN
+F 2 "lpddr4-test-board-footprints:0603-res" H 13775 8900 60  0001 L CNN
+F 3 "" H 13575 8700 50  0001 C CNN
+F 4 "BOURNS" H 13775 9100 60  0001 L CNN "Manufacturer"
+F 5 "CR0603-JW-102ELF" H 13775 9000 60  0001 L CNN "MPN"
+F 6 "1k" V 13625 8525 50  0000 L CNN "Val"
+	1    13575 8700
+	0    1    1    0   
+$EndComp
+$Comp
+L lpddr4-test-board:R_1k_0603 R66
+U 1 1 600B201C
+P 13575 9000
+F 0 "R66" V 13525 8750 60  0000 L CNN
+F 1 "R_1k_0603" H 13575 8850 60  0001 C CNN
+F 2 "lpddr4-test-board-footprints:0603-res" H 13775 9200 60  0001 L CNN
+F 3 "" H 13575 9000 50  0001 C CNN
+F 4 "BOURNS" H 13775 9400 60  0001 L CNN "Manufacturer"
+F 5 "CR0603-JW-102ELF" H 13775 9300 60  0001 L CNN "MPN"
+F 6 "1k" V 13625 8825 50  0000 L CNN "Val"
+	1    13575 9000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	14600 8850 14450 8850
+Connection ~ 13575 8850
+$Comp
+L lpddr4-test-board:GND #PWR0265
+U 1 1 600C5E4D
+P 13575 9150
+F 0 "#PWR0265" H 13575 8900 50  0001 C CNN
+F 1 "GND" H 13580 8977 50  0000 C CNN
+F 2 "" H 13575 9150 50  0001 C CNN
+F 3 "" H 13575 9150 50  0001 C CNN
+	1    13575 9150
+	-1   0    0    -1  
+$EndComp
+Text GLabel 13575 8450 1    50   Input ~ 0
+VDDQ
+Wire Wire Line
+	13575 8450 13575 8550
+Text Notes 1150 8775 0    98   ~ 20
+Clock source
+Text Notes 11675 7950 0    98   ~ 20
+LPDDR VREF
+$Comp
+L lpddr4-test-board:C_100n_0402_6V3 C114
+U 1 1 60173200
+P 14050 9000
+F 0 "C114" H 14075 9100 60  0000 L CNN
+F 1 "C_100n_0402_6V3" H 14050 8850 60  0001 C CNN
+F 2 "lpddr4-test-board-footprints:0402-cap" H 14250 9200 60  0001 L CNN
+F 3 "" H 14050 9000 50  0001 C CNN
+F 4 "Walsin" H 14250 9400 60  0001 L CNN "Manufacturer"
+F 5 "0402X104K6R3CT" H 14250 9300 60  0001 L CNN "MPN"
+F 6 "100n" H 14075 8925 50  0000 L CNN "Val"
+	1    14050 9000
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	14050 8850 13575 8850
+$Comp
+L lpddr4-test-board:C_100n_0402_6V3 C115
+U 1 1 60186976
+P 14450 9000
+F 0 "C115" H 14475 9100 60  0000 L CNN
+F 1 "C_100n_0402_6V3" H 14450 8850 60  0001 C CNN
+F 2 "lpddr4-test-board-footprints:0402-cap" H 14650 9200 60  0001 L CNN
+F 3 "" H 14450 9000 50  0001 C CNN
+F 4 "Walsin" H 14650 9400 60  0001 L CNN "Manufacturer"
+F 5 "0402X104K6R3CT" H 14650 9300 60  0001 L CNN "MPN"
+F 6 "100n" H 14475 8925 50  0000 L CNN "Val"
+	1    14450 9000
+	-1   0    0    -1  
+$EndComp
+Connection ~ 14450 8850
+Wire Wire Line
+	14450 8850 14050 8850
+$Comp
+L lpddr4-test-board:GND #PWR033
+U 1 1 60186EF0
+P 14050 9150
+F 0 "#PWR033" H 14050 8900 50  0001 C CNN
+F 1 "GND" H 14055 8977 50  0000 C CNN
+F 2 "" H 14050 9150 50  0001 C CNN
+F 3 "" H 14050 9150 50  0001 C CNN
+	1    14050 9150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L lpddr4-test-board:GND #PWR034
+U 1 1 6018718B
+P 14450 9150
+F 0 "#PWR034" H 14450 8900 50  0001 C CNN
+F 1 "GND" H 14455 8977 50  0000 C CNN
+F 2 "" H 14450 9150 50  0001 C CNN
+F 3 "" H 14450 9150 50  0001 C CNN
+	1    14450 9150
+	-1   0    0    -1  
+$EndComp
+Connection ~ 14050 8850
+Wire Wire Line
+	6950 4975 7325 4975
+$Comp
+L lpddr4-test-board:ASFLMB-100.000MHZ-XY-T U2
+U 1 1 6003B31A
+P 1425 10075
+F 0 "U2" H 2050 10362 60  0000 C CNN
+F 1 "ASFLMB-100.000MHZ-XY-T" H 2050 10256 60  0000 C CNN
+F 2 "lpddr4-test-board-footprints:ASFLMB-100.000MHZ-XY-T" H 2225 10315 60  0001 C CNN
+F 3 "" H 1425 10075 60  0000 C CNN
+	1    1425 10075
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

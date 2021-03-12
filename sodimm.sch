@@ -3,10 +3,10 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 8 8
+Sheet 8 9
 Title "LPDDR4 Test Board"
 Date ""
-Rev "1.0.0"
+Rev "1.0.4"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -381,10 +381,6 @@ Wire Wire Line
 	11750 4775 11350 4775
 Wire Wire Line
 	11350 5375 11750 5375
-Text GLabel 11750 5575 2    50   Input ~ 0
-IO_L5
-Wire Wire Line
-	11350 5575 11750 5575
 Text GLabel 11750 5875 2    50   Input ~ 0
 IO_K4
 Wire Wire Line
@@ -763,4 +759,19 @@ Wire Wire Line
 	6700 8300 6975 8300
 Wire Wire Line
 	6975 8400 6700 8400
+$Comp
+L lpddr4-test-board:9774050151 SP1
+U 1 1 602507EB
+P 1300 9475
+F 0 "SP1" H 1430 9528 60  0000 L CNN
+F 1 "9774050151" H 1430 9422 60  0000 L CNN
+F 2 "lpddr4-test-board-footprints:9774050151" H 1300 9475 60  0001 C CNN
+F 3 "https://www.we-online.com/catalog/datasheet/9774050151.pdf" H 1300 9475 60  0001 C CNN
+F 4 "Wurth Elektronik" H 1300 9475 50  0001 C CNN "Manufacturer"
+F 5 "9774050151" H 1300 9475 50  0001 C CNN "MPN"
+	1    1300 9475
+	1    0    0    -1  
+$EndComp
+Text Notes 950  9075 0    79   ~ 16
+Mechanical protection
 $EndSCHEMATC
